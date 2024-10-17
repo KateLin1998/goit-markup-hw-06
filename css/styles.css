@@ -3,13 +3,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
 .first-section .second-section .third-section .forth-section {
     background-color: #f8f9fa;
     padding: 20px;
