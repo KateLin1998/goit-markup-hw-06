@@ -1,9 +1,62 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.first-section .second-section .third-section .forth-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.first-section .second-section .third-section .forth-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .first-section .second-section .third-section .forth-section {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+
+    .first-section .second-section .third-section .forth-section {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1158px) {
+
+    .first-section .second-section .third-section .forth-section {
+        font-size: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    header {
+        background-image: url(../images/background.jpg);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        background-image: url(../images/background.jpg);
+        background-size: cover;
+    }
+}
 
 ul,
 ol {
