@@ -29,9 +29,8 @@
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="logo header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
-                <button class="menu-toggle" id="menuToggle">☰ Menu</button>
                 <ul class="nav-list">
-                    <li class="nav-item" class="mobile-menu" id="mobileMenu">
+                    <li class="nav-item">
                         <a class="nav-link current" href="./index.html">Studio</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
@@ -460,11 +459,11 @@
 </div>
 
 <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
 
     menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('is-open');
+        navList.classList.toggle('active');
     });
 </script>
 
