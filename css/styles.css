@@ -146,125 +146,51 @@ a {
     text-align: center;
 }
 
+@media (min-width: 1158px) {
+    .second-section-list {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns */
+    }
+
+    .third-section-list {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns */
+    }
+
+    .forth-section-list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+    }
+}
+
+/* Tablet View (Two Columns) */
 @media (min-width: 768px) and (max-width: 1158px) {
 
+    .second-section-list,
     .third-section-list,
     .forth-section-list {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on tablet */
-    }
-
-    .container {
-        padding: 0 20px;
-    }
-
-    .first-section-title {
-        font-size: 36px;
-    }
-
-    .first-section-button {
-        width: auto;
-        padding: 12px 24px;
-    }
-
-    h2,
-    h3 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-list {
-        flex-direction: row;
-        gap: 20px;
+        /* 2 columns */
     }
 }
 
 /* Mobile View (One Column) */
 @media (max-width: 768px) {
 
+    .second-section-list,
     .third-section-list,
     .forth-section-list {
         grid-template-columns: 1fr;
-        /* 1 column on mobile */
-    }
-
-    .first-section-title {
-        font-size: 24px;
-        margin-bottom: 24px;
-    }
-
-    .first-section-button {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .third-section-item,
-    .forth-section-item {
-        width: 100%;
-        /* Full width for mobile */
+        /* 1 column */
     }
 
     .container {
         padding: 0 10px;
     }
 
-    h2,
-    h3 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    .contacts-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-list {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        background-color: white;
+    .first-section-button {
         width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-
-    .nav-list.is-open {
-        display: flex;
-        height: 100vh;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
-
-/* Desktop Layout for Larger Screens */
-@media (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-    }
-
-    .third-section-list {
-        grid-template-columns: repeat(4, 1fr);
-        /* 4 columns on desktop */
-    }
-
-    .forth-section-list {
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 columns on desktop */
+        max-width: 200px;
     }
 }
 
