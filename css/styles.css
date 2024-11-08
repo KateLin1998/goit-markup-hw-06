@@ -1090,6 +1090,7 @@ screen and (min-resolution: 2dppx) {
 .modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 
 .modal {
